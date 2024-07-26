@@ -1,0 +1,102 @@
+@media screen and (max-width: 992px) {
+    main ul {
+        min-width: auto;
+    }
+    .small .active {
+        width: 100%;
+        color: var(--black);
+        padding: 0;
+    }
+
+    .small.active {
+        width: 100%;
+        background-color: var(--white);
+    }
+    nav ul.gap2 {
+        gap: 0.5rem;
+    }
+
+    .category_image,
+    header span img {
+        display: none;
+    }
+
+    .listTitle {
+        position: relative;
+        background-color: var(--beige);
+    }
+    
+    .active .active {
+        width: 98%;
+    }
+
+    .category_btn > p:after {
+        position: absolute;
+        top: 50%;
+        right: 1rem;
+        translate: 0 -50%;
+        content: "";
+        width: 2em;
+        aspect-ratio: 1 / 1;
+        transition: 0.5s;
+
+        background-image: url("../media/icons/smallArrowPhone.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    [data-open="true"] > p:after {
+        scale: 1 -1;
+        background-image: url("../media/icons/smallArrowPhone.svg");
+    }
+
+    .small > [data-open="true"] > p:after {
+        scale: 1 -1;
+        background-image: url("../media/icons/whiteSmallArrow.svg");
+    }
+
+    .small > [data-open="true"] {
+        padding: 0;
+        color: var(--white);
+        border: solid var(--black);
+    }
+    .small > [data-open="true"] > p {
+        background-color: var(--black);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header .menu {
+        display: block;
+    }
+    header ul.flex {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    article.flex,
+    .call {
+        display: none;
+    }
+    main {
+        min-height: calc(100dvh - calc(1 * var(--head-height)));
+    }
+    nav section.grid {
+        gap: 1em;
+        align-items: stretch;
+        grid-template-columns: 1fr 3fr 3fr 1fr;
+    }
+
+    .small_show {
+        display: block;
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: inherit;
+    }
+
+    .loupe {
+        justify-self: flex-end;
+    }
+}

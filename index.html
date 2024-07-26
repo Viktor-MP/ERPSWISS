@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="./src/style/tile.css" />
+        <link rel="stylesheet" href="./src/style/style.css" />
+        <link rel="stylesheet" href="./src/style/media.css" />
+
+        <link rel="icon" type="image/x-icon" href="./src/media/logo/logo.svg" />
+
+        <script defer src="./src/app.js" type="module"></script>
+
+        <title>Beauté Concept</title>
+    </head>
+    <body>
+        <header>
+            <nav class="flex ali_cen jus_cen">
+                <section class="grid grid_col_3 ali_cen jus_bet">
+                    <img class="menu" src="./src/media/icons/smallMenu.svg" />
+                    <ul class="flex gap2">
+                        <li>Needs</li>
+                        <li>Price List</li>
+                        <li>
+                            Treatments
+                            <img
+                                width="8px"
+                                loading="lazy"
+                                src="./src/media/icons/smallArrow.svg"
+                                alt="Small arrow"
+                            />
+                        </li>
+                        <li>Surgical</li>
+                        <li>Dental</li>
+                    </ul>
+
+                    <img
+                        class="logo"
+                        width="25%"
+                        src="./src/media/logo/logo.svg"
+                        alt="Logo"
+                    />
+
+                    <button class="small_show">
+                        Book Now
+                    </button>
+
+                    <img class="small_show loupe" width="24px" src="./src/media/icons/smallSearch.svg" alt="smallSearch">
+
+                    <span class="call flex jus_cen gap1">
+                        <img
+                            loading="lazy"
+                            width="24px"
+                            src="./src/media/icons/phone.svg"
+                            alt="Phone"
+                        />
+                        <a href="tel:+374 44 007171"> +374 44 007171</a>
+                    </span>
+
+                </section>
+            </nav>
+
+            <article class="flex ali_cen jus_cen">
+                <section class=" flex ali_cen jus_bet">
+                    <p>Choose Your Appointment</p>
+                    <form>
+                        <input type="text" placeholder="Search..." />
+                        <img
+                            width="24px"
+                            loading="lazy"
+                            src="./src/media/icons/search.svg"
+                            alt="search"
+                        />
+                    </form>
+                </section>
+            </article>
+        </header>
+
+        <main class="category-block flex jus_cen">
+            <section>
+                <h1>Schedule an Appointment</h1>
+
+                <section class="schedule flex">
+                    
+                    <ul class="active" id="root">
+                    </ul>
+
+                    <div class="category_image">
+               
+                    </div>
+                </section>
+            </section>
+        </main>
+    </body>
+</html>

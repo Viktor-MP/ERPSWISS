@@ -1,0 +1,62 @@
+.flex {
+    display: flex;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.ali_cen {
+    align-items: center;
+}
+.ali_start {
+    align-items: flex-start;
+}
+
+.jus_cen {
+    justify-content: center;
+}
+
+.jus_bet {
+    justify-content: space-between;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid_col_2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid_col_3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.active {
+    background-color: var(--beige);
+}
+
+.passive {
+    background-color: inherit;
+    color: var(--silver);
+}
+
+.gap1 {
+    gap: 0.5rem;
+}
+.gap2 {
+    gap: 1rem;
+}
+.gap3 {
+    gap: 1.5rem;
+}
+.gap4 {
+    gap: 2rem;
+}
+.gap5 {
+    gap: 2.5rem;
+}
+.gap6 {
+    gap: 3rem;
+}
