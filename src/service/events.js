@@ -9,9 +9,7 @@ const openListHandler = (obj, e) => {
 
     let currentTarget = e.currentTarget;
     let state = currentTarget.dataset.open;
-    
-    console.log(currentTarget);
-    console.log(currentTarget.parentElement);
+
 
     if (window.innerWidth < 992) {
         cleanOldListMob(currentTarget.parentElement.children);

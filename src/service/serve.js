@@ -4,7 +4,6 @@ const checkIsObj = (list) => {
             return list[li];
         }
     }
-    // console.log(list)
 };
 
 const wordReturner = (list) => {
@@ -37,7 +36,6 @@ const cleanOldListMob = (parentChilds) => {
     for (let child of parentChilds) {
         let id = child.id;
         if (child.dataset.open === "true") {
-            console.log(parentChilds[id], child.children);
             parentChilds[id].classList.remove("rotate180");
             parentChilds[id].dataset.open = "false";
             child.children[1].remove();

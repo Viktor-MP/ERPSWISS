@@ -2,19 +2,17 @@ import { openListHandler } from "./events.js";
 import { wordReturner, checkIsObj } from "./serve.js";
 
 const drawList = (list, where, id) => {
-    
+
     if (where.id === "root" && window.innerWidth < 992) {
         where.classList.add("small");
     }
 
-    console.log(list);
     for (let li in list) {
         let unList = document.createElement("li");
         let par = document.createElement("p");
         par.className = "listTitle";
 
         const listObj = checkIsObj(list[li]);
-        console.log(listObj);
 
         listObj &&
             unList.addEventListener("click", (e) =>
