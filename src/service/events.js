@@ -11,10 +11,10 @@ const openListHandler = (obj, e) => {
     if (window.innerWidth < 992) {
         cleanOldListMob(parentDoc.children);
     } else {
-        let last = parentDoc.parentElement.children;
-        let docIndex = [...last].indexOf(parentDoc);
+        let parChilds = parentDoc.parentElement.children;
+        let docIndex = [...parChilds].indexOf(parentDoc);
 
-        deleteAllDesk(last, docIndex);
+        deleteAllDesk(parChilds, docIndex);
         throughTheEl(parentDoc.children);
     }
 

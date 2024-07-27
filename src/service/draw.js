@@ -14,11 +14,11 @@ const drawList = (list, where, id) => {
 
         const listObj = checkIsObj(list[li]);
 
-        listObj &&
+        listObj?
             unList.addEventListener("click", (e) =>
                 openListHandler(listObj, e)
-            );
-        !listObj && unList.classList.add("noMoreList");
+            ):
+        unList.classList.add("noMoreList");
 
         unList.dataset.open = "false";
 
