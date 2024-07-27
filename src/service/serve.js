@@ -43,18 +43,18 @@ const cleanOldListMob = (parentChilds) => {
     }
 };
 
-const cleanOldListDesk = (targetPar) => {
-    if (targetPar.nextElementSibling.localName === "UL") {
-        return cleanOldListDesk(targetPar.nextElementSibling);
+const deleteAllDesk = (last, ind) => {
+    for (let i = ind + 1; i < last.length - 1; i++) {
+        last[i--].remove()
     }
-
-    return targetPar.nextElementSibling.remove();
 };
+
+
 
 export {
     checkIsObj,
     throughTheEl,
     wordReturner,
+    deleteAllDesk,
     cleanOldListMob,
-    cleanOldListDesk,
 };
